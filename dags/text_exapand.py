@@ -15,7 +15,7 @@ with DAG(
     @task
     def get_files():
 
-        return [f"file_{nb}" for nb in range(random.randint(3, 5))]
+        return [f"file_{nb}" for nb in range(random.randint(3, 5))] 
     
     @task
     def download_file(folder:str,file_name: str):
